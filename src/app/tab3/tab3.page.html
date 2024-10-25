@@ -1,6 +1,13 @@
+<ion-item>
+  <ion-label>Selecciona la primera fecha</ion-label>
+  <ion-datetime displayFormat="YYYY-MM-DD" [(ngModel)]="firstDate" (ionChange)="onDateChange()"></ion-datetime>
+</ion-item>
 
-<ion-content [fullscreen]="true">
-  <ion-datetime [isDateEnabled]="dayone"></ion-datetime>
-  <ion-datetime [isDateEnabled]="daytwo"></ion-datetime> 
-</ion-content>
+<ion-item>
+  <ion-label>Selecciona la segunda fecha</ion-label>
+  <ion-datetime displayFormat="YYYY-MM-DD" [(ngModel)]="secondDate" (ionChange)="onDateChange()"></ion-datetime>
+</ion-item>
 
+<p>Primera fecha: {{ firstDate | date:'yyyy-MM-dd' }}</p>
+<p>Segunda fecha: {{ secondDate | date:'yyyy-MM-dd' }}</p>
+<p>Fecha resultante: {{ daysDifference }}</p>

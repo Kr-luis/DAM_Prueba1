@@ -1,11 +1,33 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Ecuación Cuadrática</ion-title>
+  </ion-toolbar>
+</ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-list>
-    <ion-item>
-      <ion-input labelPlacement="floating">
-        <div slot="label">Escribe algo...</div>
-      </ion-input>
-    </ion-item>
-  </ion-list>
-  <ion-button expand="block">Guardar</ion-button> 
+<ion-content>
+  <ion-item>
+    <ion-label position="floating">Coeficiente a</ion-label>
+    <ion-input type="number" [(ngModel)]="a"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Coeficiente b</ion-label>
+    <ion-input type="number" [(ngModel)]="b"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Coeficiente c</ion-label>
+    <ion-input type="number" [(ngModel)]="c"></ion-input>
+  </ion-item>
+
+  <ion-button expand="full" (click)="calcularRaices()">Calcular Raíces</ion-button>
+
+  <div *ngIf="mensaje">
+    <p>{{ mensaje }}</p>
+  </div>
+
+  <div *ngIf="raiz1 !== null || raiz2 !== null">
+    <p *ngIf="raiz1 !== null">Raíz 1: {{ raiz1 }}</p>
+    <p *ngIf="raiz2 !== null">Raíz 2: {{ raiz2 }}</p>
+  </div>
 </ion-content>
