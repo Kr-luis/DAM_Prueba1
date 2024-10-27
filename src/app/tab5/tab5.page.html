@@ -1,0 +1,7 @@
+<ion-content class="ion-padding">
+  <ion-item>
+    <ion-label position="stacked">Ingresa el texto a descargar</ion-label>
+    <ion-textarea [(ngModel)]="textToDownload" placeholder="Escribe aquí..."></ion-textarea>
+  </ion-item>
+  <ion-button expand="block" color="primary" (click)="downloadTextFile()">Descargar Texto</ion-button>
+</ion-content>

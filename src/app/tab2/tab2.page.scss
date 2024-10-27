@@ -1,3 +1,27 @@
 ion-item {
     --padding-start: 0;
   }
+  ion-content {
+    --background: #000000; /* Color de fondo suave */
+  }
+  
+  .custom-card {
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  .custom-card ion-card-header {
+    background-color: #2dc3e9;
+    color: white;
+    padding: 16px;
+  }
+  
+  .custom-card ion-card-title {
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+  
+  ion-button {
+    margin-top: 16px;
+  }
+  

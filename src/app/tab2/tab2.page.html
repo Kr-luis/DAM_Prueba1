@@ -1,12 +1,20 @@
-
 <ion-content [fullscreen]="true">
-    <ion-card>
-      <img alt="Silhouette of mountains" src="../../assets/imagen.jpg" />
-      <ion-card-header>
-        <ion-card-title>Repositorio del app</ion-card-title>
-      </ion-card-header>
-      <ion-button size="large" href=" https://github.com/Kr-luis/DAM_Prueba1">
-      <ion-icon name="logo-github"></ion-icon> Repositorio</ion-button>
-    </ion-card>
-  </ion-content>
-
+  <ion-grid class="ion-justify-content-center ion-align-items-center" style="height: 100%;">
+    <ion-row>
+      <ion-col size="12" size-md="8" size-lg="6">
+        <ion-card class="custom-card">
+          <ion-img alt="Silhouette of mountains" src="https://scontent.fuio23-1.fna.fbcdn.net/v/t39.30808-6/290306455_1740512482965965_1474080863635288737_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=127cfc&_nc_ohc=aXouvQuyj4MQ7kNvgECyFrd&_nc_zt=23&_nc_ht=scontent.fuio23-1.fna&_nc_gid=AmnD2BokpUcv9lYF4h_5RyS&oh=00_AYBnJaA46fU57gDCxT1b_11qay9LawqS5gw25ZO37EbVSQ&oe=67247750"></ion-img>
+          <ion-card-header>
+            <ion-card-title class="ion-text-center">Repositorio del App</ion-card-title>
+          </ion-card-header>
+          <ion-card-content class="ion-text-center">
+            <ion-button size="large" color="primary" href="https://github.com/Kr-luis/DAM_Prueba1" expand="block">
+              <ion-icon slot="start" name="logo-github"></ion-icon>
+              Repositorio
+            </ion-button>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

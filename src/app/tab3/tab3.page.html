@@ -1,13 +1,28 @@
-<ion-item>
-  <ion-label>Selecciona la primera fecha</ion-label>
-  <ion-datetime displayFormat="YYYY-MM-DD" [(ngModel)]="firstDate" (ionChange)="onDateChange()"></ion-datetime>
-</ion-item>
+<ion-content [fullscreen]="true">
+  <ion-grid>
+    <ion-row class="ion-justify-content-center">
+      <!-- Columna para la primera fecha -->
+      <ion-col size="12" size-md="6">
+        <ion-item lines="none" class="custom-item">
+          <ion-label position="stacked">Selecciona la primera fecha</ion-label>
+          <ion-datetime displayFormat="YYYY-MM-DD" [(ngModel)]="firstDate" (ionChange)="onDateChange()"></ion-datetime>
+        </ion-item>
+      </ion-col>
 
-<ion-item>
-  <ion-label>Selecciona la segunda fecha</ion-label>
-  <ion-datetime displayFormat="YYYY-MM-DD" [(ngModel)]="secondDate" (ionChange)="onDateChange()"></ion-datetime>
-</ion-item>
+      <!-- Columna para la segunda fecha -->
+      <ion-col size="12" size-md="6">
+        <ion-item lines="none" class="custom-item">
+          <ion-label position="stacked">Selecciona la segunda fecha</ion-label>
+          <ion-datetime displayFormat="YYYY-MM-DD" [(ngModel)]="secondDate" (ionChange)="onDateChange()"></ion-datetime>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 
-<p>Primera fecha: {{ firstDate | date:'yyyy-MM-dd' }}</p>
-<p>Segunda fecha: {{ secondDate | date:'yyyy-MM-dd' }}</p>
-<p>Fecha resultante: {{ daysDifference }}</p>
+  <!-- Resultados -->
+  <div class="ion-padding">
+    <p>Primera fecha: {{ firstDate | date:'yyyy-MM-dd' }}</p>
+    <p>Segunda fecha: {{ secondDate | date:'yyyy-MM-dd' }}</p>
+    <p>Diferencia de días: {{ daysDifference }}</p>
+  </div>
+</ion-content>
