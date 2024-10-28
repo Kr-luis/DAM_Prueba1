@@ -1,5 +1,8 @@
 
 # APP prueba 1 DAM
+## Descargar APK
+
+Puedes descargar la última versión del APK [aquí](https://github.com/Kr-luis/DAM_Prueba1/blob/main/LGuaygua_Prueba.apk).
 
 Paginas de la APP
 
@@ -22,3 +25,5 @@ Pagina 4
 Pagina 5
 
 ![image](https://github.com/Kr-luis/DAM_Prueba1/blob/main/src/assets/tab5.png)
+
+
