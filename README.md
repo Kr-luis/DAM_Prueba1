@@ -26,4 +26,8 @@ Pagina 5
 
 ![image](https://github.com/Kr-luis/DAM_Prueba1/blob/main/src/assets/tab5.png)
 
+Splash Screen
+
+![image](https://github.com/Kr-luis/DAM_Prueba1/blob/main/src/assets/Splash%20Screen%20.png?raw=true)
+
 
